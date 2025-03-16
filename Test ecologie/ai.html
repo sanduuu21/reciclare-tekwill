@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Brainshop</title>
+    <link rel="stylesheet" href="ai.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="logo.svg">    <link rel="icon" type="image/svg+xml" href="logo.svg">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Informații</a></li>
+            <li><a href="game.html">Jocuri</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            
+            <li><a href="concurs.html">Concursuri</a></li>
+            <li><a href="log.html">Logare</a></li>
+            <li><a href="ai.html">AI</a></li>
+        </ul>
+    </nav>
+    
+    <div class="ai-container">
+        <h1>Asistent AI Brainshop</h1>
+        <p>Pune orice întrebare și AI-ul îți va răspunde!</p>
+        
+        <div class="chat-box">
+            <input type="text" id="user-input" placeholder="Scrie o întrebare...">
+            <button onclick="askAI()">Trimite</button>
+        </div>
+        
+        <div id="ai-response"></div>
+    </div>
+    
+    <script src="ai.js"></script>
+
+
+    <footer id="contact">
+        <img src="logo.svg" alt="Logo">
+        <h2>Contact</h2>
+        <p>Email: clasa12@gmail.com</p>
+        <p class="disclaimer">
+            Acest website a fost realizat în cadrul competiției „Tekwill Junior Ambassadors” organizată de proiectul „Tekwill în Fiecare Școală” și nu reflectă neapărat opinia proiectului.
+        </p>
+    </footer>
+</body>
+</html>

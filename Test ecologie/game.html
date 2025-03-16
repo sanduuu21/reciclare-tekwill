@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jocuri Educaționale</title>
+    <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="info.html">Informații</a></li>
+            <li><a href="game.html">Jocuri</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+         
+            <li><a href="concurs.html">Concursuri</a></li>
+            <li id="login-nav-item"><a href="log.html">Logare</a></li>
+            <li><a href="ai.html">AI</a></li>
+        </ul>
+    </nav>
+    <!DOCTYPE html>
+    <html lang="ro">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Joc Reciclare</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Reciclează Corect!</h1>
+        <p>Trage obiectele în tomberonul corect. Obiectele sunt fie din hârtie, fie din sticlă, fie din plastic, fie resturi vegetale, fie energie.</p>
+        <h2>Scor: <span id="score">0</span></h2>
+        
+        <div class="bins">
+            <div class="bin" data-type="sticla">
+                <img src="t1.png" alt="Tomberon Sticlă">
+                <p>Sticlă</p>
+            </div>
+            <div class="bin" data-type="hartie">
+                <img src="t2.png" alt="Tomberon Hârtie">
+                <p>Hârtie</p>
+            </div>
+            <div class="bin" data-type="plastic">
+                <img src="t3.png" alt="Tomberon Plastic">
+                <p>Plastic</p>
+            </div>
+            <div class="bin" data-type="energie">
+                <img src="t5.png" alt="Tomberon Energie">
+                <p>Energie</p>
+            </div>
+            <div class="bin" data-type="resturi">
+                <img src="t4.png" alt="Tomberon Resturi Vegetale">
+                <p>Resturi Vegetale</p>
+            </div>
+        </div>
+        
+        <div class="trash-items">
+            <div class="row">
+                <div class="trash" draggable="true" data-type="hartie">Ziar</div>
+                <div class="trash" draggable="true" data-type="sticla">Sticlă de vin</div>
+                <div class="trash" draggable="true" data-type="plastic">Pahar de plastic</div>
+                <div class="trash" draggable="true" data-type="energie">Baterie uzată</div>
+                <div class="trash" draggable="true" data-type="resturi">Coajă de banană</div>
+            </div>
+            <div class="row">
+                <div class="trash" draggable="true" data-type="plastic">Pungă de plastic</div>
+                <div class="trash" draggable="true" data-type="hartie">Cutie de carton</div>
+                <div class="trash" draggable="true" data-type="sticla">Pahar de sticlă</div>
+                <div class="trash" draggable="true" data-type="energie">Bec ars</div>
+                <div class="trash" draggable="true" data-type="resturi">Morcov stricat</div>
+            </div>
+            <div class="row">
+                <div class="trash" draggable="true" data-type="hartie">Revistă</div>
+                <div class="trash" draggable="true" data-type="sticla">Borcan de gem</div>
+                <div class="trash" draggable="true" data-type="plastic">Cutie de iaurt</div>
+                <div class="trash" draggable="true" data-type="energie">Panou solar vechi</div>
+                <div class="trash" draggable="true" data-type="resturi">Cojile de mere</div>
+            </div>
+            <div class="row">
+                <div class="trash" draggable="true" data-type="hartie">Agendă</div>
+                <div class="trash" draggable="true" data-type="sticla">Sticlă de suc</div>
+                <div class="trash" draggable="true" data-type="plastic">Lingură de plastic</div>
+                <div class="trash" draggable="true" data-type="energie">Acumulator vechi</div>
+                <div class="trash" draggable="true" data-type="resturi">Resturi de legume</div>
+            </div>
+            </div>
+        
+     
+    
+        <div id="tree-game" class="game hidden">
+            <h2>Crește un Copac</h2>
+            <p>Udă copacul și vezi cum crește!</p>
+            <button onclick="waterTree()">Udă copacul</button>
+            <div id="tree-stage">🌱</div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+
+
+    <footer id="contact">
+        <img src="logo.svg" alt="Logo">
+        <h2>Contact</h2>
+        <p>Email: clasa12@gmail.com</p>
+        <p class="disclaimer">
+            Acest website a fost realizat în cadrul competiției „Tekwill Junior Ambassadors” organizată de proiectul „Tekwill în Fiecare Școală” și nu reflectă neapărat opinia proiectului.
+        </p>
+    </footer>
+</body>
+</html>

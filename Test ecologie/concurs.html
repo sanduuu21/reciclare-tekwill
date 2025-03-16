@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concursuri</title>
+    <link rel="stylesheet" href="concurs.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="info.html">Informații</a></li>
+            <li><a href="game.html">Jocuri</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="concurs.html">Concursuri</a></li>
+            <li><a href="log.html">Logare</a></li>
+            <li><a href="ai.html">AI</a></li>
+        </ul>
+    </nav>
+
+    <div class="contest-container">
+        <h1>Concursuri și Olimpiade</h1>
+        <section id="anunturi">
+            <h2>📢 ANUNȚURI</h2>
+            <div class="anunt">
+                <h3>Vă rugăm să aduceți carton!</h3>
+                <p>Colectăm carton pentru a strânge fonduri necesare achiziționării de materiale educaționale. Implică-te și tu pentru un mediu mai curat!</p>
+            </div>
+            <div class="anunt">
+                <h3>♻️ Colectarea deșeurilor în Republica Moldova</h3>
+                <p>În conformitate cu noile reglementări, colectarea deșeurilor este acum obligatorie. Contribuie și tu la protecția mediului respectând regulile de reciclare!</p>
+            </div>
+        </section>
+
+        <p>Alege un concurs sau încarcă proiectul tău pentru participare!</p>
+        <form id="upload-form">
+            <label for="file-upload">Încarcă un fișier:</label>
+            <input type="file" id="file-upload">
+            <button type="button" onclick="uploadFile()">Trimite</button>
+        </form>
+        
+        <div id="message"></div>
+
+        <h2>Evenimente disponibile</h2>
+        <table class="contest-table">
+            <tr>
+                <th>Eveniment</th>
+                <th>Data</th>
+                <th>Locație</th>
+            </tr>
+            <tr>
+                <td>Concurs de reciclare</td>
+                <td>10 Mai 2024</td>
+                <td>Online</td>
+            </tr>
+            <tr>
+                <td>Proiecte ecologice pentru școli</td>
+                <td>15 Iunie 2024</td>
+                <td>Chișinău</td>
+            </tr>
+            <tr>
+                <td>Hackathon pentru mediu</td>
+                <td>20 Iulie 2024</td>
+                <td>Online</td>
+            </tr>
+            <tr>
+                <td>Olimpiada de Ecologie</td>
+                <td>1 februarie 2025</td>
+                <td>Bălți</td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="concurs.js"></script>
+
+    <footer id="contact">
+        <img src="logo.svg" alt="Logo">
+        <h2>Contact</h2>
+        <p>Email: clasa12@gmail.com</p>
+        <p class="disclaimer">
+            Acest website a fost realizat în cadrul competiției „Tekwill Junior Ambassadors”.
+        </p>
+    </footer>
+
+</body>
+</html>

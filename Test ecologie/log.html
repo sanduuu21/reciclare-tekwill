@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logare</title>
+    <link rel="stylesheet" href="log.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="info.html">Informații</a></li>
+            <li><a href="game.html">Jocuri</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="concurs.html">Concursuri</a></li>
+            <li id="login-nav-item"><a href="log.html">Logare</a></li>
+            <li><a href="ai.html">AI</a></li>
+        </ul>
+    </nav>
+    
+    <div id="navbar"></div>
+    <script>
+        fetch("navbar.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("navbar").innerHTML = data);
+    </script>
+    
+    <div class="login-container">
+        <h2>Autentificare</h2>
+        <form id="login-form">
+            <label for="username">Utilizator:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Parolă:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit">Logare</button>
+        </form>
+        <p id="login-message"></p>
+    </div>
+    
+    <script src="log.js"></script>
+
+    <footer id="contact">
+        <img src="logo.svg" alt="Logo">
+        <h2>Contact</h2>
+        <p>Email: clasa12@gmail.com</p>
+        <p class="disclaimer">
+            Acest website a fost realizat în cadrul competiției „Tekwill Junior Ambassadors” organizată de proiectul „Tekwill în Fiecare Școală” și nu reflectă neapărat opinia proiectului.
+        </p>
+    </footer>
+</body>
+</html>
